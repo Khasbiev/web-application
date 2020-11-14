@@ -55,7 +55,6 @@ body {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.06) 100%), #191A1F;
 }
 table{
- 
     list-style: none;
     font-family: "Lucida Sans";
     font-size: 16px;
@@ -142,9 +141,18 @@ button:active {
   background-color: greenyellow;
   color: #000000;
 }
+
 .addBtn::after{
   content: '\271A';
 }
+
+.close-modal{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.06) 100%), #191A1F;
+}
+.close-modal2{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.06) 100%), #191A1F;
+}
+
 .modal {
   position: absolute;
   box-sizing: border-box;
@@ -156,10 +164,23 @@ button:active {
   pointer-events: none;
   transition: 300ms all;
   color: black;
+  background-color: #626166;
 }
 
 .modal-show {
+  list-style: none;
+  font-family: "Lucida Sans";
+  font-size: 16px;
+  position: relative;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  left: 10%;
+  top: 40%;
   z-index: 77;
+  justify-content: center;
+  border-radius: 20px;
   pointer-events: all;
   cursor: pointer;
   opacity: 1;
@@ -179,17 +200,30 @@ button:active {
   pointer-events: none;
   transition: 300ms all;
   color: black;
+  background-color: #626166;
 }
 
 .modal2-show {
+  list-style: none;
+  font-family: "Lucida Sans";
+  font-size: 16px;
+  position: relative;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  left: 10%;
+  top: 40%;
   z-index: 77;
+  justify-content: center;
+  border-radius: 20px;
   pointer-events: all;
   cursor: pointer;
   opacity: 1;
   transform: scale(1);
-  color: #000000;
-}
+  color: black;
 
+}
 table{
   transition: all 3s ease-in-out 300ms;
   font-size: 18px;
@@ -199,7 +233,7 @@ table{
 table {
   width: 100%; /* Ширина таблицы в процентах */
  }
- .col1 {
-  width: 100px; /* Ширина ячейки */
-  position:absolute;
- }
+.col1 {
+width: 100px; /* Ширина ячейки */
+position:absolute;
+}
