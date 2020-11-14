@@ -1,0 +1,205 @@
+
+
+* {
+  box-sizing: border-box;
+  /* margin: 0;
+  padding: 0; */
+}
+
+body {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+}
+
+.split {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  padding-top: 20px;
+
+}
+
+.left {
+  width: 30%;
+  left: 0;
+  background-color: #111;
+  color: #F7F8FC;
+  background-color: #626166;
+}
+
+.right {
+  width: 70%;
+  right: 0;
+  overflow: auto;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 14.52%, rgba(255, 255, 255, 0) 87.38%), #626166;
+}
+.first-raw{
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 6px;
+  border: 10px solid #000000;
+  color: #626166;
+  font-weight:bold;
+}
+.content{
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.06) 100%), #191A1F;
+}
+table{
+ 
+    list-style: none;
+    font-family: "Lucida Sans";
+    font-size: 16px;
+    position: relative;
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+}
+.push {
+  list-style: none;
+  font-family: "Lucida Sans";
+  font-size: 16px;
+}
+.push li {
+  position: relative;
+  padding: 20px 0 20px 40px;
+  color: #D29D25;
+  font-variant: small-caps;
+  font-weight: bold;
+  cursor: pointer;
+}
+.push li:before {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #4F5151;
+  content: "";
+  left: 0;
+  transition: .3s ease-in-out;
+  top: 27px;
+}
+.push li:after {
+  position: absolute;
+  border-left: 1px dotted #4F5151;
+  width: 1px;
+  bottom: -12px;
+  content: "";
+  left: 3px;
+  top: 48px;
+}
+.push li:hover:before{box-shadow: 0 0 0 10px rgba(0,0,0,.2)}
+.push li:last-child:after {content: none;}
+
+button {
+  height: 30px;
+  width: 60px;
+  max-width: 60px;
+  margin: 3px;
+  border-radius: 6px;
+  border: 0px solid #000000;
+  background-color: #626166;
+  color: #ffffff;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+button:active {
+  opacity: 0.5;
+}
+.deleteButton{
+  background-color: red;
+  width: 30px;
+  border-radius: 25px;
+  color: #000000;
+}
+.editButton{
+  color: white;
+  font-size: 8px;
+}
+.deleteButton:after{
+  content: '\2718';
+}
+
+.addBtn{
+  content: '\271A';
+  background-color: greenyellow;
+  color: #000000;
+}
+.addBtn::after{
+  content: '\271A';
+}
+.modal {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 2em;
+  background: white;
+  transform: scale(0);
+  z-index: -777;
+  opacity: 0;
+  pointer-events: none;
+  transition: 300ms all;
+  color: black;
+}
+
+.modal-show {
+  z-index: 77;
+  pointer-events: all;
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1);
+  color: black;
+
+}
+
+.modal2 {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 2em;
+  background: white;
+  transform: scale(0);
+  z-index: -777;
+  opacity: 0;
+  pointer-events: none;
+  transition: 300ms all;
+  color: black;
+}
+
+.modal2-show {
+  z-index: 77;
+  pointer-events: all;
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1);
+  color: #000000;
+}
+
+table{
+  transition: all 3s ease-in-out 300ms;
+  font-size: 18px;
+  overflow: auto;
+}
+
+table {
+  width: 100%; /* Ширина таблицы в процентах */
+ }
+ .col1 {
+  width: 100px; /* Ширина ячейки */
+  position:absolute;
+ }
