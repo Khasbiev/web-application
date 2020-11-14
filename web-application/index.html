@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> -->
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="wrapper" id="wrapper">
+      <div id="container" class="split left container"></div>
+      <div class="split right content">
+        <table class="inventory-table">
+          <tbody id="inventory-table-body">
+          <div class="modal">
+            <p>Название оборудования:
+              <input id="inputName" type="text"> 
+            </p>
+            <p>Количество:
+              <input id="inputCount" type="text"> 
+            </p>
+            <form id="places-list">
+              </form>
+            <button class="close-modal">Готово</button>
+          </div>
+          <div class="modal2">
+            <h3>Изменение оборудования</h3>
+            <p>Название оборудования:
+              <input id="inputName2" type="text"> 
+            </p>
+            <p>Количество:
+              <input id="inputCount2" type="text"> 
+            </p>
+              </form>
+            <button class="close-modal2">Готово</button>
+          </div>
+          </tbody>
+        </table>
+      </div>
+  </div> 
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-firestore.js"></script>
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
