@@ -110,28 +110,6 @@ function getResult(docs) {
   }
   const treeExport = buildTree(tree);
 
-  function createTree(data) {
-    const ul = document.createElement('ul');
-    ul.classList.add('push');
-    ul.id = 'push';
-        
-    data.forEach(item => {
-      const li = document.createElement('li');
-      
-      li.textContent = item.name;
-      li.classList.add(...item.id.split(' '));
-      li.classList.add('clickable');
-      li.id = item.id.split(' ');
-
-      if (item.children) {
-        li.appendChild(createTree(item.children));
-      }
-  
-      ul.appendChild(li);
-    });
-  
-    return ul;
-  }
 
   document.querySelector('#container').appendChild(createTree(treeExport));
 
